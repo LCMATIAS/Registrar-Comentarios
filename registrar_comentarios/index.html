@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Comentarios!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS
+         Mas información : https://getbootstrap.com/docs/4.0/getting-started/introduction/
+     -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+  </head>
+  <body>
+      
+      <input type="hidden" id="Operacion" value="I"> 
+      <input type="hidden" id="IdSelec" value="">
+      
+      <div class="container">
+
+        <h1>Registro de comentarios!</h1>
+      
+        <form>
+          <div class="form-group">
+            <label class="col-form-label" for="txtUsuario">Usuario</label>
+            <input type="text" class="form-control" id="txtUsuario" placeholder="Nombre del Usuario">
+          </div>
+
+          <div class="form-group">
+            <label for="txtComentario">Comentario</label>
+            <textarea class="form-control" id="txtComentario" rows="3" placeholder="Indique el comentario"></textarea>
+          </div>
+        </form>
+          
+        <button type="button" onclick="registrarComentario();" class="btn btn-success">Guardar</button>
+                
+        <hr>
+        <table id="tableComentarios" class="table table-hover table-dark table-responsive-sm">
+          <thead>
+            <tr>
+              <th scope="col">Usuario</th>
+              <th scope="col">Comentario</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Opción</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      
+      </div>
+    <!-- Optional JavaScript -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
